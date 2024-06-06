@@ -1,3 +1,12 @@
+export type IContextType = {
+    user: IUser;
+    isLoading: boolean;
+    setUser: (user: IUser) => void;
+    isAuthenticated: boolean;
+    setIsAuthenticated: (isAuthenticated: boolean) => void;
+    checkAuthUser: () => Promise<boolean>;
+};
+
 export type INavLink = {
     imgURL: string;
     route: string;
